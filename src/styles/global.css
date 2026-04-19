@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fdf0f3;
+  color: #4a2030;
+  font-family: 'Georgia', serif;
+  overflow-x: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: #4a2030;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
